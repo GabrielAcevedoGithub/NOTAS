@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTAS</title>
+</head>
+<body>
+    <H1>NOTAS</H1>
+     <table>
+        <thead>
+            <tr>
+                <th>ID#</th>
+                <th>NOMBRE</th>
+                <th>ASUNTO</th>
+                <th>NOTA</th>
+            </tr>
+        </thead>
+        <TBody>
+            {% for notas in notas %}
+            <tr>
+                <td>{{notas[0]}}</td>
+                <td>{{notas[1]}}</td>
+                <td>{{notas[2]}}</td>
+                <td>{{notas[3]}}</td>
+                <td>
+                <a href="/modify/{{notas[0]}}">EDITAR</a>
+                --
+                <a href="/delete/{{notas[0]}}">BORRAR</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </TBody>
+        
+    </table>
+</body>
+</html>

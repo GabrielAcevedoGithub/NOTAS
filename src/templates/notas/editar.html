@@ -1,0 +1,19 @@
+<h1>EDITAR NOTA</h1>
+
+<form method="POST" action="/actualizar" enctype="multipart/form-data" >
+    
+    
+    <input hidden type="text" name="id" id="id" value="{{notas[0]}}">
+
+    <label for="nombre">nombre: </label>
+    <input type="text" name="nombre" id="nombre" value="{{notas[1]}}">
+
+    <label for="asunto">asunto: </label>
+    <input type="text" name="asunto" id="asunto" value="{{notas[2]}}">
+
+    <label for="nota">nota: </label>
+    <input type="text" name="nota" id="nota" value="{{notas[3]}}">
+
+    <input type="submit" value="ACTUALIZAR">
+    <a href="/">CANCELAR</a>
+</form>
